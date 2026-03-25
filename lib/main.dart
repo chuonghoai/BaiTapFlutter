@@ -12,12 +12,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'MVC Sales App',
+      title: 'Admin Management',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
+        fontFamily: 'Roboto',
       ),
-      initialRoute: AppRouter.teamRoute,
+      initialRoute: AppRouter.loginRoute,
       onGenerateRoute: AppRouter.generateRoute,
     );
   }
